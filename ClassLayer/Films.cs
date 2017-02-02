@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassLayer
 {
-    class Films : List<Films>
+    public class Films : List<Film>
     {
         public Films()
         {
 
         }
 
-        public Films(List<Films> Films)
+        public Films(List<Film> Films)
         {
             this.AddRange(Films);
         }

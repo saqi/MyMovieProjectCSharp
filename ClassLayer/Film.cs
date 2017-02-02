@@ -6,17 +6,40 @@ using System.Threading.Tasks;
 
 namespace ClassLayer
 {
-    class Film : SimplisticFilm
+    public class Film : SimplisticFilm
     {
         /// <summary>
         /// constructor that inherits from the base costructor
         /// </summary>
         /// <param name="FilmId"></param>
         /// <param name="FilmName"></param>
-        public Film(string FilmId, string FilmName) : base(FilmId, FilmName)
+        /// <param name="imdbRating"></param>
+        /// <param name="filmYear"></param>
+        public Film(string FilmId, string FilmName, string imdbRating, string filmYear) : base(FilmId, FilmName)
         {
+            this.ImdbRating = imdbRating;
+            this.FilmYear = filmYear;
+            this.Directors = new List<Director>();
+            this.Actors = new List<Actor>();
         }
-        
+
+        /// <summary>
+        /// constructor that inherits from the base costructor
+        /// </summary>
+        /// <param name="filmID"></param>
+        /// <param name="filmName"></param>
+        /// <param name="imdbRating"></param>
+        /// <param name="directors"></param>
+        /// <param name="actors"></param>
+        /// <param name="filmYear"></param>
+        public Film(string filmID, string filmName, string imdbRating, List<Director> directors, List<Actor> actors, string filmYear) : base(filmID, filmName)
+        {
+            this.ImdbRating = imdbRating;
+            this.FilmYear = filmYear;
+            this.Directors = directors;
+            this.Actors = actors;
+        }
+
         /// <summary>
         /// Declaration of field members
         /// </summary>

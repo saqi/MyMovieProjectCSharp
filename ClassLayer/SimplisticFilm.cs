@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLayer
 {
-    class SimplisticFilm
+    public class SimplisticFilm
     {
         /// <summary>
         /// constructor declarations
