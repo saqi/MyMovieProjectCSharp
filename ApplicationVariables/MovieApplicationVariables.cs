@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ApplicationVariables
 {
-    public class MovieApplicationVariables
+    public class ApplicationVariables
     {
-        public MovieApplicationVariables()
+        public ApplicationVariables()
         {
 
         }
 
         public struct CsvPath
         {
-            public static string MoviesSCV = @"C:\Users\C855-1G_\Documents\Visual Studio 2015\Projects\MyNovusProject\TestData.csv";
+            public static string MoviesSCV = @"C:\Users\C855-1G_\Documents\Visual Studio 2015\Projects\NovusMovieProject\WebMovies\ExtendedTestData.csv";
         }
 
         public struct SystemSettings

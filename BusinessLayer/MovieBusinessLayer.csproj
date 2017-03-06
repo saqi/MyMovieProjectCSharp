@@ -43,6 +43,16 @@
     <Compile Include="MovieBusinessClasses.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLayer\MovieClassLayer.csproj">
+      <Project>{7c4b694c-2498-434e-89c8-2d3900d320c8}</Project>
+      <Name>MovieClassLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\MovieDataLayer.csproj">
+      <Project>{73b95b94-5ef2-400f-b971-c4e4379adee8}</Project>
+      <Name>MovieDataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

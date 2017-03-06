@@ -264,6 +264,13 @@
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -300,6 +307,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -355,6 +363,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="TestData.csv" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -366,6 +375,24 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationVariables\MovieApplicationVariables.csproj">
+      <Project>{cb7e41ff-cc6f-4718-9564-faefc08e7197}</Project>
+      <Name>MovieApplicationVariables</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLayer\MovieBusinessLayer.csproj">
+      <Project>{2aa7947b-3357-4701-910e-afe0db8bbe9a}</Project>
+      <Name>MovieBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLayer\MovieClassLayer.csproj">
+      <Project>{7c4b694c-2498-434e-89c8-2d3900d320c8}</Project>
+      <Name>MovieClassLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\MovieDataLayer.csproj">
+      <Project>{73b95b94-5ef2-400f-b971-c4e4379adee8}</Project>
+      <Name>MovieDataLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

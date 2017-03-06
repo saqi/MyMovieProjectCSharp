@@ -5,12 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using csvMovies = ApplicationVariables.MovieApplicationVariables.DataIDs.CsvItems_Movies;
+using csvMovies = ApplicationVariables.ApplicationVariables.DataIDs.CsvItems_Movies;
 using mcl = ClassLayer;
 
-namespace MovieDataLayer
+namespace DataLayer
 {
-    public class MovieDataLayer : IDisposable
+    public class DataLayer : IDisposable
     {
         public void Dispose()
         {

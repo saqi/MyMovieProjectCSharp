@@ -11,6 +11,7 @@ namespace ClassLayer
         /// <summary>
         /// constructor declarations
         /// </summary>
+        public SimplisticFilm() { }
         public SimplisticFilm(string FilmId, string FilmName)
         {
             this.FilmId = FilmId;
@@ -20,23 +21,18 @@ namespace ClassLayer
         /// <summary>
         /// Declaration of field members
         /// </summary>
-        private string _filmId;
-        private string _filmName;
+        private string filmId;
+        private string filmName;
 
         /// <summary>
         /// Properties for private fields
         /// </summary>
         public string FilmId
-        {
-            get { return _filmId; }
-            set { _filmId = value; }
-        }
+        { get; set; }
+        
 
         public string FilmName
-        {
-            get { return _filmName; }
-            set { _filmName = value; }
-        }
+        { get; set; }
 
     } // end of SimplisticFilm class
 

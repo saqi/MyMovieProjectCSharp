@@ -7,6 +7,7 @@
         /// </summary>
         /// <param name="PersonId"></param>
         /// <param name="PersonName"></param>
+        public Director() { }
         public Director(string PersonId, string PersonName) : base(PersonId, PersonName)
         {
         }
